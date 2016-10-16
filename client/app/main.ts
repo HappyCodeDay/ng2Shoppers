@@ -1,9 +1,6 @@
-import 'core-js';
-import 'reflect-metadata';
-import 'zone.js/dist/zone';
-
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from '../src/app/app.module';
+import { AppModule } from './app.module';
 
 const platform = platformBrowserDynamic();
+console.log('step - 1' + AppModule);
 platform.bootstrapModule(AppModule);

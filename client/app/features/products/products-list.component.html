@@ -1,0 +1,64 @@
+<style>
+
+.list-price{
+    background: #394;
+    padding: 10 14 7 10;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 1.5; 
+}    
+</style>
+<div class="row">
+    <div class="col-md-3">
+        <!--<search-product></search-product>-->
+    </div>
+    <div class="col-md-9">
+        <div *ngFor="let product of products">
+            <product-item #product_item>
+                <!--<div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <strong><big>{{product.name}}</big></strong>    
+                        <button class="btn btn-primary pull-right"
+                        (click)="product_item.add_to_cart(product)">Add to Cart</button>    
+                    </div>    
+                    <div class="panel-body">
+                        <p>{{product.description}}</p>    
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-default"
+                        (click)="product_item.go_to_detail(product)">View Details</button>
+                        <span class="list-price pull-right">&#8377;  {{product.price}}</span>    
+                    </div>
+                </div>-->
+                <div class="col-md-4">
+                 <article class="col-item">
+        		<div class="photo">
+        			<div class="options">
+        				<button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Add to wish list">
+        					<span class="glyphicon glyphicon-heart"></span>
+        				</button>
+        			</div>
+        			<div class="options-cart">
+        				<button class="btn btn-default" title="Add to cart" (click)="product_item.add_to_cart(product)">
+        					<span class="glyphicon glyphicon-shopping-cart"></span>
+        				</button>
+        			</div>
+        			<a (click)="product_item.go_to_detail(product)"> <img src="https://unsplash.it/500/300?image=0" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        					<p class="details">
+        						{{product.description}}
+        					</p>
+        					<h1>{{product.name}}</h1>
+        					<span class="price-new">&#8377;  {{product.price}}</span>
+        				</div>
+        			</div>
+        		</div>
+        	</article>
+                </div>
+            </product-item>
+        </div>        
+    </div>
+</div>

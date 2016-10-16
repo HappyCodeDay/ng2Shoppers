@@ -1,0 +1,52 @@
+{
+  "name": "ng2shoppers",
+  "version": "0.1.0",
+  "description": "This is a shopping cart application developed in angular2 using typescript and webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "@angular/common": "~2.0.2",
+    "@angular/compiler": "~2.0.2",
+    "@angular/core": "~2.0.2",
+    "@angular/forms": "^2.0.2",
+    "@angular/platform-browser": "~2.0.2",
+    "@angular/platform-browser-dynamic": "~2.0.2",
+    "@angular/router": "~3.0.2",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alokj10/ng2Shoppers.git"
+  },
+  "keywords": [
+    "angular2",
+    "shopping",
+    "cart",
+    "ng",
+    "template",
+    "UI"
+  ],
+  "author": "Alok Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alokj10/ng2Shoppers/issues"
+  },
+  "homepage": "https://github.com/alokj10/ng2Shoppers#readme",
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
+  }
+}
